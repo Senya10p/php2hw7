@@ -13,6 +13,6 @@ class AdminDel extends \App\Controller
         $data = \App\Models\Article::findById( $_POST['del'] );
         $data->delete();
 
-        header('Location: /../../adminEdit/');
+        header('Location: /../../admin/');
     }
 }

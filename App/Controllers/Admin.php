@@ -11,7 +11,7 @@ class Admin extends \App\Controller
 
     public function action() //для отображения таблицы новостей
     {
-        include __DIR__ . '/../functions.php';
+        $functions = include __DIR__ . '/../functions.php';
 
         $models = \App\Models\Article::findAll();
 

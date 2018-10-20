@@ -15,7 +15,7 @@ class AdminUpdate extends \App\Controller
         $d = ['header' => $_POST['header'], 'text' => $_POST['text']];
         $data->fill($d);
 
-        header('Location: /../../adminEdit/');
+        header('Location: /../../admin/');
 
         $data->save(); //сохраняем данные
     }

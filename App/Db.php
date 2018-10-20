@@ -61,7 +61,7 @@ class Db    //Улучшаем класс Db.
 
             $sth->setFetchMode(\PDO::FETCH_CLASS, $class);
 
-            while ( $result = $sth->fetch() ) {
+            while ( false !== $result = $sth->fetch() ) {
 
                 yield $result;
             }

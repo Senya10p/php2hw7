@@ -23,6 +23,6 @@ class AdminAdd extends \App\Controller
                 $data->save(); //добавляет новую запись
             }
         }
-        header('Location: /../../adminEdit/');
+        header('Location: /../../admin/');
     }
 }

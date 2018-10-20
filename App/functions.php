@@ -2,7 +2,7 @@
 
 use App\Models\Article;
 
-return $functions = [
+return [
 
     function (Article $article) :string {
     return $article->id;
